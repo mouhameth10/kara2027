@@ -9,7 +9,7 @@
     ]
   },
   "files": [
-    "src/main.ts",
+   
     "src/main.server.ts",
     "server.ts"
   ],
@@ -17,3 +17,4 @@
     "src/**/*.d.ts"
   ]
 }
+

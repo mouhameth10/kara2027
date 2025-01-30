@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriel d'apprentissage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa; 
+            margin: 0;
+            padding: 20px;
+        }
+
+        #tutorial-container {
+            display: flex; 
+            flex-wrap: wrap; /* Permet le wrapping sur les petits écrans */
+            max-width: 1200px; 
+            margin: auto; 
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .tp-buttons {
+            flex: 1; 
+            min-width: 200px; /* Largeur minimale pour la colonne des boutons */
+            padding: 20px; 
+            border-right: 1px solid #dee2e6; 
+        }
+
+        .tp-buttons button {
+            width: 100%; 
+            padding: 10px;
+            margin: 10px 0; 
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; 
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+
+        .tp-buttons button:hover {
+            background-color: #0056b3; 
+        }
+
+        .content {
+            flex: 3; 
+            padding: 20px; 
+            min-width: 300px; /* Largeur minimale pour le contenu */
+        }
+
+        h1 {
+            text-align: center; 
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin: 20px 0; 
+        }
+
+        #prerequisites {
+            background: #e9ecef; 
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .screenshot {
+            border: 1px dashed #007bff; 
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center; 
+            color: #6c757d; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Tutoriel d'apprentissage</h1>
+    <div id="tutorial-container">
+        <div class="tp-buttons">
+            <button onclick="location.href='tp1.html'">TP 1 - Déploiement avec FileZilla</button>
+            <button onclick="location.href='tp2.html'">TP 2 - Déploiement d'une application PHP avec Docker</button>
+            <button onclick="location.href='tp3.html'">TP 3 - Supervision et Monitoring d'une App PHP avec Grafana et Prometheus</button>
+            <button onclick="location.href='tp4.html'">TP 4 - Déploiement d'une Application Node.js avec Docker et Supervision</button>
+            <button onclick="location.href='tp5.html'">TP 5 - Déploiement d'une Application Flutter avec Firebase</button>
+        </div>
+        <div class="content">
+            <h2 id="step-title">Bienvenue dans le tutoriel</h2>
+            <p>Sélectionnez un TP à gauche pour commencer.</p>
+        </div>
+    </div>
+</body>
+</html>
